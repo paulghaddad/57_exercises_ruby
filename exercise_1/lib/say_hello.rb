@@ -4,7 +4,7 @@ end
 
 def main
   print "What is your name? "
-  name = gets.chomp
+  name = STDIN.gets.chomp
   puts greeting(name)
 end
 

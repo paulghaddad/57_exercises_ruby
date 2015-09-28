@@ -1,4 +1,4 @@
-require 'say_hello'
+require "say_hello"
 
 describe "#greeting" do
   it "should output a personalized greeting" do
