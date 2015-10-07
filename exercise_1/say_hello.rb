@@ -1,10 +1,12 @@
+#Say Hello
+
 def greeting(name)
   "Hello, #{name}, nice to meet you!"
 end
 
 def main
   print "What is your name? "
-  name = STDIN.gets.chomp
+  name = gets.chomp
   puts greeting(name)
 end
 
