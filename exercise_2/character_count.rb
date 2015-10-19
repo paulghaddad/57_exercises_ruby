@@ -3,7 +3,7 @@ def main
 end
 
 def user_input
-  while true
+  loop do
     print "What is the input string? "
     user_input = gets.chomp
     return user_input if user_input.length > 0
