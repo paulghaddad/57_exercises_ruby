@@ -1,11 +1,5 @@
-def main
-  print "What is your name? "
-  name = gets.chomp
-  puts greeting(name)
+class SayHello
+  def self.greeting(name)
+    "Hello, #{name}, nice to meet you!"
+  end
 end
-
-def greeting(name)
-  "Hello, #{name}, nice to meet you!"
-end
-
-main

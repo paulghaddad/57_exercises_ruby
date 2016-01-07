@@ -1,9 +1,12 @@
-require_relative "say_hello"
+require "./say_hello"
 
-describe "#greeting" do
-  it "should output a personalized greeting" do
+describe SayHello do
+
+  it "greets you" do
     name = "Paul"
 
-    expect(greeting(name)).to eq("Hello, Paul, nice to meet you!")
+    statement = SayHello.greeting(name)
+
+    expect(statement).to eq("Hello, Paul, nice to meet you!")
   end
 end
