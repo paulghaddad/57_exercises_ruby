@@ -1,7 +1,6 @@
 require "date"
 
 class RetirementAnalyzer
-
   attr_reader :current_age, :desired_retirement_age
 
   def initialize(current_age:, desired_retirement_age: 65)
