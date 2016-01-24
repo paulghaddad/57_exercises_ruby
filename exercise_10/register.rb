@@ -9,7 +9,7 @@ class Register
     @tax_rate = tax_rate
   end
 
-  def checkout_item(price: , quantity: 1)
+  def checkout_item(price:, quantity: 1)
     @subtotal += price * quantity
   end
 

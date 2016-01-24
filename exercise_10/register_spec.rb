@@ -1,7 +1,6 @@
 require "./register"
 
 describe "Register" do
-
   describe "#initialize" do
     it "has a subtotal of $0" do
       register = create_register
@@ -14,7 +13,7 @@ describe "Register" do
     it "defaults to a tax rate of 5.5%" do
       register = create_register
 
-      expect(register).to have_attributes(:subtotal => 0.0, :tax_rate => 0.055)
+      expect(register).to have_attributes(subtotal: 0.0, tax_rate: 0.055)
     end
   end
 
@@ -61,7 +60,7 @@ describe "Register" do
     end
   end
 
-  private 
+  private
 
   def create_register
     Register.new

@@ -27,9 +27,9 @@ def add_item_to_register(item_number:)
 end
 
 def print_receipt
-  puts "Subtotal: #{sprintf("$%.2f", @register.subtotal)}"
-  puts "Tax: #{sprintf("$%.2f", @register.tax)}"
-  puts "Total: #{sprintf("$%.2f", @register.total)}"
+  puts "Subtotal: #{format('$%.2f', @register.subtotal)}"
+  puts "Tax: #{format('$%.2f', @register.tax)}"
+  puts "Total: #{format('$%.2f', @register.total)}"
 end
 
 main
