@@ -1,7 +1,6 @@
 require "./compound_interest_calculator"
 
 describe CompoundInterestCalculator do
-
   describe "#compounded_amount" do
     it "calculates the interest and principle compounded over time" do
       principal_amount = 1500
@@ -9,10 +8,10 @@ describe CompoundInterestCalculator do
       years = 6
       compound_frequency = 4
       calculator = CompoundInterestCalculator.new(
-                      principal: principal_amount,
-                      rate: rate,
-                      years: years,
-                      compound_frequency: compound_frequency)
+        principal: principal_amount,
+        rate: rate,
+        years: years,
+        compound_frequency: compound_frequency)
 
       compounded_amount = calculator.compounded_amount
 
@@ -33,15 +32,14 @@ describe CompoundInterestCalculator do
   private
 
   def create_calculator
-      principal_amount = 1500
-      rate = 4.3
-      years = 6
-      compound_frequency = 4
-      CompoundInterestCalculator.new(
-                      principal: principal_amount,
-                      rate: rate,
-                      years: years,
-                      compound_frequency: compound_frequency)
-
+    principal_amount = 1500
+    rate = 4.3
+    years = 6
+    compound_frequency = 4
+    CompoundInterestCalculator.new(
+      principal: principal_amount,
+      rate: rate,
+      years: years,
+      compound_frequency: compound_frequency)
   end
 end

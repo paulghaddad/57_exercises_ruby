@@ -9,8 +9,8 @@ class CompoundInterestCalculator
   end
 
   def compounded_amount
-    amount = principal * (1 + rate / compound_frequency) ** (compound_frequency * years)
-    amount.round(2)
+    factor = (1 + rate / compound_frequency)**(compound_frequency * years)
+    (principal * factor).round(2)
   end
 
   def summary
