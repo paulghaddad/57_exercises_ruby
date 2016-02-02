@@ -1,7 +1,7 @@
 require "./password_validator"
 
 def main
-  correct_password= "abc$123"
+  correct_password = "abc$123"
   @password_validator = PasswordValidator.new(password: correct_password)
 
   entered_password = user_input

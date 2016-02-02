@@ -29,5 +29,4 @@ describe PasswordValidator do
       expect(validate_password).to be_falsey
     end
   end
-
 end
