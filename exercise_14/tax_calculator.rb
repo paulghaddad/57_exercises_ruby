@@ -2,7 +2,7 @@ class TaxCalculator
   attr_reader :subtotal, :state, :tax
 
   WI_TAX_RATE = 0.055
-  TAXABLE_STATES = [:WI]
+  TAXABLE_STATES = [:WI].freeze
 
   def initialize(subtotal:, state:)
     @subtotal = subtotal
@@ -10,18 +10,17 @@ class TaxCalculator
     @tax = calculate_tax || 0
   end
 
-
   def total
     subtotal + tax
   end
 
   def summary
     if taxable_state?
-      puts "The subtotal is $#{sprintf("%.2f", subtotal)}"
-      puts "The tax is $#{sprintf("%.2f", tax)}"
+      puts "The subtotal is $#{format('%.2f', subtotal)}"
+      puts "The tax is $#{format('%.2f', tax)}"
     end
 
-    puts "The total is $#{sprintf("%.2f", total)}"
+    puts "The total is $#{format('%.2f', total)}"
   end
 
   private
