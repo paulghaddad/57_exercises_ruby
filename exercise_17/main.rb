@@ -50,9 +50,4 @@ def create_blood_alcohol_calculator
     hours_since_last_drink: @hours_since_last_drink)
 end
 
-def blood_alcohol_content_results
-  puts
-  @calculator.results
-end
-
 main
