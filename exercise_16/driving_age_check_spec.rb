@@ -8,7 +8,6 @@ describe DrivingAgeCheck do
 
       expect(age_checker.legal_driver?).to be_truthy
     end
-  end
 
     it "returns true if the driver is the legal driving age" do
       age = 16
@@ -23,6 +22,7 @@ describe DrivingAgeCheck do
 
       expect(age_checker.legal_driver?).to be_falsey
     end
+  end
 
   private
 

@@ -1,7 +1,7 @@
 class DrivingAgeCheck
   attr_reader :age
 
-  LEGAL_DRIVING_AGE = 16.freeze
+  LEGAL_DRIVING_AGE = 16
 
   def initialize(age:)
     @age = age
