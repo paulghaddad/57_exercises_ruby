@@ -17,28 +17,28 @@ end
 def input_for_weight
   print "What is your body weight in pounds? "
   weight = gets.chomp
-  raise NonNumericInputError unless weight.match(/\d+/)
+  raise NonNumericInputError unless weight =~ /\d+/
   weight.to_i
 end
 
 def input_for_gender
   print "What is your gender (male or female)? "
   gender = gets.chomp.downcase
-  raise GenderInputError unless gender.match(/male|female/)
+  raise GenderInputError unless gender =~ /male|female/
   gender.to_sym
 end
 
 def input_for_number_of_drinks
   print "How many drinks have you consumed? "
   drinks_consumed = gets.chomp
-  raise NonNumericInputError unless drinks_consumed.match(/\d+/)
+  raise NonNumericInputError unless drinks_consumed =~ /\d+/
   drinks_consumed.to_i
 end
 
 def input_for_hours_since_last_drink
   print "How many hours has it been since your last drink? "
   hours_since_last_drink = gets.chomp
-  raise NonNumericInputError unless hours_since_last_drink.match(/\d+/)
+  raise NonNumericInputError unless hours_since_last_drink =~ /\d+/
   hours_since_last_drink.to_i
 end
 

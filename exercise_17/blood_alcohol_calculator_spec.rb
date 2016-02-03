@@ -47,14 +47,14 @@ describe BloodAlcoholCalculator do
   private
 
   def create_calculator
-      alcohol_consumed = 16
-      body_weight = 180
-      gender = :male
-      hours_since_last_drink = 2
-      BloodAlcoholCalculator.new(
-        alcohol_consumed: alcohol_consumed,
-        body_weight: body_weight,
-        gender: gender,
-        hours_since_last_drink: hours_since_last_drink)
+    alcohol_consumed = 16
+    body_weight = 180
+    gender = :male
+    hours_since_last_drink = 2
+    BloodAlcoholCalculator.new(
+      alcohol_consumed: alcohol_consumed,
+      body_weight: body_weight,
+      gender: gender,
+      hours_since_last_drink: hours_since_last_drink)
   end
 end
